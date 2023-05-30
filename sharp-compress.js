@@ -16,8 +16,6 @@ async function compressAndResizeImages() {
     // Read the input folder
     const files = await fs.promises.readdir(inputFolder);
 
-    console.log('Images compressed and resized successfully:');
-
     // Process each file for compression and resizing
     for (const file of files) {
       const sourcePath = path.join(inputFolder, file);
